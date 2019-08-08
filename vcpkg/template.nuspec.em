@@ -1,15 +1,15 @@
 <?xml version="1.0"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
-    <id>ros-dashing-fastcdr</id>
-    <version>1.0.9</version>
-    <title>ros-dashing-fastcdr</title>
-    <authors>Steven! Ragnarök <stevenragnarok@osrfoundation.org></authors>
+    <id>@(Package)</id>
+    <version>@(Version)</version>
+    <title>@(Package)</title>
+    <authors>@(Authors)</authors>
     <owners>OSRF</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>CDR serialization implementation.</description>
-<dependencies>
-      <dependency id="ros-dashing-ros-workspace"/>
+    <description>@(Description)</description>
+    <dependencies>
+@[for d in Depends]@(d)@[end for]
     </dependencies>
   </metadata>
   <files>
